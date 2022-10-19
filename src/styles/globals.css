@@ -1,3 +1,35 @@
+:root {
+  /* COLORS */
+
+  /* Primary */
+
+  /*Text*/
+  --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --SoftRed: hsl(14, 88%, 65%);
+
+  /*BG Gradient*/
+  --SoftViolet: hsl(273, 75%, 66%);
+  --SoftBlue: hsl(240, 73%, 65%);
+
+  /* Neutral */
+
+  /*Text*/
+  --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --DarkGrayishBlue: hsl(240, 6%, 50%);
+
+  /*Dividers*/
+  --LightGrayishBlue: hsl(240, 5%, 91%);
+
+  /* TYPOGRAPHY */
+
+  --FF-Primary: 'Kumbh Sans', sans-serif;
+
+  --FS-Paragraph: 1.2rem;
+
+  --FW-Regular: 400;
+  --FW-Bold: 700;
+}
+
 *,
 *::before,
 *::after {
@@ -12,5 +44,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-family: var(--FF-Primary);
+  font-size: var(--FS-Paragraph);
+  font-weight: var(--FW-Regular);
+  font-style: normal;
 }
