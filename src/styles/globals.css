@@ -4,7 +4,7 @@
   /* Primary */
 
   /*Text*/
-  --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --VeryDarkDesaturatedBlue: hsl(238, 29%, 17%, 1);
   --SoftRed: hsl(14, 88%, 65%);
 
   /*BG Gradient*/
@@ -16,6 +16,7 @@
   /*Text*/
   --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
   --DarkGrayishBlue: hsl(240, 6%, 50%);
+  --White: #ffffff;
 
   /*Dividers*/
   --LightGrayishBlue: hsl(240, 5%, 91%);
@@ -25,6 +26,9 @@
   --FF-Primary: 'Kumbh Sans', sans-serif;
 
   --FS-Paragraph: 1.2rem;
+  --FS-H1: 3.2rem;
+
+  --LH-H1: 4rem;
 
   --FW-Regular: 400;
   --FW-Bold: 700;
