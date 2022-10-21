@@ -35,6 +35,10 @@
   color: var(--DarkGrayishBlue);
 }
 
+.accordionItem.active {
+  cursor: text;
+}
+
 .accordionItem.active .question {
   margin-block: 12px;
   font-weight: var(--FW-Bold);
@@ -47,4 +51,9 @@
 
 .accordionItem.active .answerWrapper {
   margin-block-end: 16px;
+}
+
+.accordionItem:focus:not(.active) > .question,
+.accordionItem:hover:not(.active) > .question {
+  color: var(--SoftRed);
 }

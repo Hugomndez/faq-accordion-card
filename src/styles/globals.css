@@ -5,7 +5,7 @@
 
   /*Text*/
   --VeryDarkDesaturatedBlue: hsl(238, 29%, 17%, 1);
-  --SoftRed: hsl(14, 88%, 65%);
+  --SoftRed: hsl(14, 88%, 65%, 1);
 
   /*BG Gradient*/
   --SoftViolet: hsl(273, 75%, 66%);

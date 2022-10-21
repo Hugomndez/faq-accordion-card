@@ -10,17 +10,17 @@ type AccordionItemProps = {
 };
 
 const Accordion = ({ FAQs }: Data) => {
-  const [currentIdx, setCurrentIdx] = useState(0);
+  const [currentIdx, setCurrentIdx] = useState(1);
 
   return (
     <ul className={styles.accordion}>
       {FAQs?.map((faq, idx) => (
         <AccordionItem
           key={idx}
-          isOpen={idx === currentIdx}
-          onClick={() => setCurrentIdx(idx)}
           question={faq.question}
           answer={faq.answer}
+          isOpen={idx === currentIdx}
+          onClick={() => setCurrentIdx(idx)}
         />
       ))}
     </ul>
@@ -30,7 +30,7 @@ const Accordion = ({ FAQs }: Data) => {
 export default Accordion;
 
 const AccordionItem = (props: AccordionItemProps) => {
-  const { isOpen, onClick, question, answer } = props;
+  const { question, answer, isOpen, onClick } = props;
   const elRef = useRef<HTMLParagraphElement>(null);
   const [height, setHeight] = useState(0);
 
