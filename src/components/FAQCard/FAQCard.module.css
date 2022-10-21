@@ -16,10 +16,13 @@
 .shadow {
   position: absolute;
   z-index: 1;
-  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 81%;
 }
 
 .illustration {
+  width: 237px;
   position: absolute;
   z-index: 2;
   bottom: 87%;
@@ -32,4 +35,38 @@
   font-size: var(--FS-H1);
   line-height: var(--LH-H1);
   color: var(--VeryDarkDesaturatedBlue);
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 920px;
+    height: 509px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'blank  title'
+      'blank  accordion';
+    padding-block: 65px;
+    padding-inline: 95px;
+    overflow: hidden;
+  }
+
+  .shadow {
+    left: initial;
+    right: 59%;
+    bottom: -24%;
+    transform: unset;
+  }
+
+  .illustration {
+    width: initial;
+    left: initial;
+    right: 59%;
+    bottom: 20%;
+    transform: initial;
+  }
+
+  .title {
+    grid-area: title;
+  }
 }

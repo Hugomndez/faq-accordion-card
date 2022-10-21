@@ -3,10 +3,10 @@ import { Data } from '../../types/data';
 import { useState, useEffect, useRef } from 'react';
 
 type AccordionItemProps = {
-  isOpen: boolean;
-  onClick: () => void;
   question: string;
   answer: string;
+  isOpen: boolean;
+  onClick: () => void;
 };
 
 const Accordion = ({ FAQs }: Data) => {
@@ -56,15 +56,7 @@ const AccordionItem = (props: AccordionItemProps) => {
     >
       <h2 className={styles.question}>
         {question}
-        <svg width='10' height='7' xmlns='http://www.w3.org/2000/svg'>
-          <path
-            d='M1 .799l4 4 4-4'
-            stroke='#F47B56'
-            strokeWidth='2'
-            fill='none'
-            fillRule='evenodd'
-          />
-        </svg>
+        <ArrowIcon />
       </h2>
       <div className={styles.answerWrapper} style={{ height }}>
         <p className={styles.answer} ref={elRef}>
@@ -72,5 +64,19 @@ const AccordionItem = (props: AccordionItemProps) => {
         </p>
       </div>
     </li>
+  );
+};
+
+const ArrowIcon = () => {
+  return (
+    <svg width='10' height='7' xmlns='http://www.w3.org/2000/svg'>
+      <path
+        d='M1 .799l4 4 4-4'
+        stroke='#F47B56'
+        strokeWidth='2'
+        fill='none'
+        fillRule='evenodd'
+      />
+    </svg>
   );
 };

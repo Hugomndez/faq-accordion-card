@@ -57,3 +57,10 @@
 .accordionItem:hover:not(.active) > .question {
   color: var(--SoftRed);
 }
+
+@media screen and (min-width: 1000px) {
+  .question {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
