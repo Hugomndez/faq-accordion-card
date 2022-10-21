@@ -16,6 +16,7 @@
   /*Text*/
   --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
   --DarkGrayishBlue: hsl(240, 6%, 50%, 1);
+  --Medium-Grey: hsl(216, 12%, 54%);
   --White: #ffffff;
 
   /*Dividers*/
@@ -26,6 +27,7 @@
   --FF-Primary: 'Kumbh Sans', sans-serif;
 
   --FS-Paragraph: 1.2rem;
+  --Copyright: 1.1rem;
   --FS-H1: 3.2rem;
 
   --LH-H1: 4rem;

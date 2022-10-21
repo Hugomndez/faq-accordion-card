@@ -1,0 +1,11 @@
+.attribution {
+  font-family: inherit;
+  font-size: var(--Copyright);
+  text-align: center;
+  color: var(--VeryDarkDesaturatedBlue);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--White);
+}
