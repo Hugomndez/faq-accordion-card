@@ -3,6 +3,12 @@ import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 import type { Data } from '../types/data';
 
+const BASE_URL = {
+  production: `https://${process.env.VERCEL_URL}`,
+  preview: `https://${process.env.VERCEL_URL}`,
+  development: process.env.NEXTAUTH_URL,
+}[process.env.VERCEL_ENV as string];
+
 const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   data,
 }) => {
@@ -30,7 +36,7 @@ export default Home;
 export const getStaticProps: GetStaticProps<{
   data: Data;
 }> = async context => {
-  const response = await fetch('http://localhost:3000/api/data');
+  const response = await fetch(`${BASE_URL}/api/data`);
   const data = await response.json();
 
   return {
