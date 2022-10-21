@@ -15,11 +15,11 @@
 
   /*Text*/
   --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
-  --DarkGrayishBlue: hsl(240, 6%, 50%);
+  --DarkGrayishBlue: hsl(240, 6%, 50%, 1);
   --White: #ffffff;
 
   /*Dividers*/
-  --LightGrayishBlue: hsl(240, 5%, 91%);
+  --LightGrayishBlue: hsl(240, 5%, 91%, 1);
 
   /* TYPOGRAPHY */
 
