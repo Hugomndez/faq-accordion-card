@@ -1,17 +1,9 @@
 import { Accordion, FAQCard } from 'components';
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
+import { data } from 'db/data';
+import type { NextPage } from 'next';
 import Head from 'next/head';
-import type { Data } from '../types/data';
 
-const BASE_URL = {
-  production: `https://${process.env.VERCEL_URL}`,
-  preview: `https://${process.env.VERCEL_URL}`,
-  development: process.env.NEXTAUTH_URL,
-}[process.env.VERCEL_ENV as string];
-
-const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  data,
-}) => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -32,16 +24,3 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 };
 
 export default Home;
-
-export const getStaticProps: GetStaticProps<{
-  data: Data;
-}> = async context => {
-  const response = await fetch(`${BASE_URL}/api/data`);
-  const data = await response.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
-};
