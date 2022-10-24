@@ -38,6 +38,12 @@
   color: var(--VeryDarkDesaturatedBlue);
 }
 
+@media screen and (max-height: 667px) {
+  .card {
+    margin: 5px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .card {
     width: 920px;

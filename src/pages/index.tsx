@@ -16,10 +16,12 @@ const Home: NextPage = () => {
           href='/favicon-32x32.png'
         />
       </Head>
-      <FAQCard>
-        <Accordion {...data} />
-      </FAQCard>
-      <Attribution />
+      <main>
+        <FAQCard>
+          <Accordion {...data} />
+        </FAQCard>
+        <Attribution />
+      </main>
     </>
   );
 };
