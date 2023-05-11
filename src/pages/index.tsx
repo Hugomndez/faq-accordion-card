@@ -8,7 +8,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Frontend Mentor | FAQ Accordion Card</title>
-        <meta name='description' content='Frontend Mentor Challenge' />
+        <meta
+          name='description'
+          content='Frontend Mentor Challenge'
+        />
         <link
           rel='icon'
           type='image/png'
