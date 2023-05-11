@@ -24,8 +24,6 @@
 
   /* TYPOGRAPHY */
 
-  --FF-Primary: 'Kumbh Sans', sans-serif;
-
   --FS-Paragraph: 1.2rem;
   --Copyright: 1.1rem;
   --FS-H1: 3.2rem;
@@ -55,7 +53,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--FF-Primary);
   font-size: var(--FS-Paragraph);
   font-weight: var(--FW-Regular);
   font-style: normal;
