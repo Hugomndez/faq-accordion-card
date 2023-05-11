@@ -1,6 +1,6 @@
 import { Accordion, Attribution, FAQCard } from 'components';
 import { data } from 'db/data';
-import type { NextPage } from 'next';
+import { type NextPage } from 'next';
 import Head from 'next/head';
 
 const Home: NextPage = () => {
@@ -8,7 +8,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Frontend Mentor | FAQ Accordion Card</title>
-        <meta name='description' content='Frontend Mentor Challenge' />
+        <meta
+          name='description'
+          content='Frontend Mentor Challenge'
+        />
         <link
           rel='icon'
           type='image/png'

@@ -1,6 +1,6 @@
-import styles from './Accordion.module.css';
+import { useEffect, useRef, useState } from 'react';
 import { Data } from '../../types/data';
-import { useState, useEffect, useRef } from 'react';
+import styles from './Accordion.module.css';
 
 type AccordionItemProps = {
   question: string;
@@ -47,19 +47,20 @@ const AccordionItem = (props: AccordionItemProps) => {
   return (
     <li
       className={
-        isOpen
-          ? `${styles.accordionItem} ${styles.active}`
-          : styles.accordionItem
+        isOpen ? `${styles.accordionItem} ${styles.active}` : styles.accordionItem
       }
       onClick={onClick}
-      tabIndex={0}
-    >
+      tabIndex={0}>
       <h2 className={styles.question}>
         {question}
         <ArrowIcon />
       </h2>
-      <div className={styles.answerWrapper} style={{ height }}>
-        <p className={styles.answer} ref={elRef}>
+      <div
+        className={styles.answerWrapper}
+        style={{ height }}>
+        <p
+          className={styles.answer}
+          ref={elRef}>
           {answer}
         </p>
       </div>
@@ -69,7 +70,10 @@ const AccordionItem = (props: AccordionItemProps) => {
 
 const ArrowIcon = () => {
   return (
-    <svg width='10' height='7' xmlns='http://www.w3.org/2000/svg'>
+    <svg
+      width='10'
+      height='7'
+      xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M1 .799l4 4 4-4'
         stroke='#F47B56'

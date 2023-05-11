@@ -21,8 +21,7 @@ export const data = {
     {
       id: 4,
       question: 'Can I cancel my subscription?',
-      answer:
-        'Yes! Send us a message and we’ll process your request no questions asked.',
+      answer: 'Yes! Send us a message and we’ll process your request no questions asked.',
     },
     {
       id: 5,

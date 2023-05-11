@@ -1,7 +1,6 @@
 import styles from './FAQCard.module.css';
-import type { ReactNode } from 'react';
 
-type FAQCardProps = { children?: ReactNode };
+type FAQCardProps = { children?: React.ReactNode };
 
 const FAQCard = ({ children }: FAQCardProps) => {
   return (
@@ -19,9 +18,16 @@ export default FAQCard;
 const IllustrationBG = () => {
   return (
     <picture>
-      <source srcSet='/bg-pattern-desktop.svg' media='(min-width: 1000px)' />
+      <source
+        srcSet='/bg-pattern-desktop.svg'
+        media='(min-width: 1000px)'
+      />
 
-      <img className={styles.shadow} src='/bg-pattern-mobile.svg' alt='' />
+      <img
+        className={styles.shadow}
+        src='/bg-pattern-mobile.svg'
+        alt=''
+      />
     </picture>
   );
 };
