@@ -1,6 +1,6 @@
 import { Accordion, Attribution, FAQCard } from 'components';
 import { data } from 'db/data';
-import type { NextPage } from 'next';
+import { type NextPage } from 'next';
 import Head from 'next/head';
 
 const Home: NextPage = () => {

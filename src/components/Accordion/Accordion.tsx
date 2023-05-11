@@ -1,6 +1,6 @@
-import styles from './Accordion.module.css';
+import { useEffect, useRef, useState } from 'react';
 import { Data } from '../../types/data';
-import { useState, useEffect, useRef } from 'react';
+import styles from './Accordion.module.css';
 
 type AccordionItemProps = {
   question: string;
